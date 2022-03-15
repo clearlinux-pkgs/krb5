@@ -12,7 +12,6 @@ e2fsprogs-dev
 yasm
 expect
 lmdb-dev
-
 openssl-dev32
 readline-dev32
 e2fsprogs-dev32

@@ -1,4 +1,4 @@
-From 282261c958118ebc839fcfadb8d40c9c17598d43 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Karthik Prabhu Vinod <karthik.prabhu.vinod@intel.com>
 Date: Fri, 8 Jan 2021 09:51:19 -0800
 Subject: [PATCH] Add Require dependency for mit-krb5 on comm_err
@@ -9,7 +9,7 @@ Signed-off-by: Karthik Prabhu Vinod <karthik.prabhu.vinod@intel.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/src/build-tools/mit-krb5.pc.in b/src/build-tools/mit-krb5.pc.in
-index 0308815..b99b9f7 100644
+index fdc5577..82d1f23 100644
 --- a/src/build-tools/mit-krb5.pc.in
 +++ b/src/build-tools/mit-krb5.pc.in
 @@ -10,6 +10,7 @@ defcktname=@DEFCKTNAME@
@@ -18,8 +18,5 @@ index 0308815..b99b9f7 100644
  Version: @KRB5_VERSION@
 +Requires: com_err
  Cflags: -I${includedir}
- Libs: -L${libdir} -lkrb5 -lk5crypto -lcom_err
+ Libs: -L${libdir} -lkrb5 -lk5crypto @COM_ERR_LIB@
  Libs.private: -lkrb5support
--- 
-2.30.0
-

@@ -1,1 +1,3 @@
---with-system-es --with-system-et --with-ldap
+--with-system-es
+--with-system-et
+--with-ldap
