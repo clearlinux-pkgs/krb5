@@ -242,13 +242,8 @@ libgssrpc.so.4:gssrpc_xprt_unregister
 libk5crypto.so.3:HIDDEN
 libk5crypto.so.3:is_coll_proof_cksum
 libk5crypto.so.3:is_keyed_cksum
-libk5crypto.so.3:k5_aes_encrypt
-libk5crypto.so.3:k5_aes_encrypt_key256
 libk5crypto.so.3:k5_enctype_to_ssf
 libk5crypto.so.3:k5_sha256
-libk5crypto.so.3:k5_sha256_final
-libk5crypto.so.3:k5_sha256_init
-libk5crypto.so.3:k5_sha256_update
 libk5crypto.so.3:k5crypto_3_MIT
 libk5crypto.so.3:krb5_c_block_size
 libk5crypto.so.3:krb5_c_checksum_length
@@ -332,7 +327,7 @@ libk5crypto.so.3:krb5int_c_free_keyblock_contents
 libk5crypto.so.3:krb5int_c_init_keyblock
 libk5crypto.so.3:krb5int_c_mandatory_cksumtype
 libk5crypto.so.3:krb5int_c_weak_enctype
-libk5crypto.so.3:krb5int_camellia_cbc_mac
+libk5crypto.so.3:krb5int_camellia_encrypt
 libk5crypto.so.3:krb5int_cmac_checksum
 libk5crypto.so.3:krb5int_derive_key
 libk5crypto.so.3:krb5int_derive_random
@@ -503,7 +498,6 @@ libkadm5srv_mit.so.12:kadm5_randkey_principal
 libkadm5srv_mit.so.12:kadm5_randkey_principal_3
 libkadm5srv_mit.so.12:kadm5_rename_principal
 libkadm5srv_mit.so.12:kadm5_set_string
-libkadm5srv_mit.so.12:kadm5_set_use_password_server
 libkadm5srv_mit.so.12:kadm5_setkey_principal
 libkadm5srv_mit.so.12:kadm5_setkey_principal_3
 libkadm5srv_mit.so.12:kadm5_setkey_principal_4
@@ -613,17 +607,16 @@ libkdb5.so.10:krb5_db_fetch_mkey
 libkdb5.so.10:krb5_db_fetch_mkey_list
 libkdb5.so.10:krb5_db_fini
 libkdb5.so.10:krb5_db_free
-libkdb5.so.10:krb5_db_free_authdata_info
 libkdb5.so.10:krb5_db_free_policy
 libkdb5.so.10:krb5_db_free_principal
 libkdb5.so.10:krb5_db_get_age
-libkdb5.so.10:krb5_db_get_authdata_info
 libkdb5.so.10:krb5_db_get_context
 libkdb5.so.10:krb5_db_get_key_data_kvno
 libkdb5.so.10:krb5_db_get_policy
 libkdb5.so.10:krb5_db_get_principal
 libkdb5.so.10:krb5_db_get_s4u_x509_principal
 libkdb5.so.10:krb5_db_inited
+libkdb5.so.10:krb5_db_issue_pac
 libkdb5.so.10:krb5_db_iter_policy
 libkdb5.so.10:krb5_db_iterate
 libkdb5.so.10:krb5_db_lock
@@ -638,7 +631,6 @@ libkdb5.so.10:krb5_db_rename_principal
 libkdb5.so.10:krb5_db_set_context
 libkdb5.so.10:krb5_db_setup_lib_handle
 libkdb5.so.10:krb5_db_setup_mkey_name
-libkdb5.so.10:krb5_db_sign_authdata
 libkdb5.so.10:krb5_db_store_master_key
 libkdb5.so.10:krb5_db_store_master_key_list
 libkdb5.so.10:krb5_db_unlock
@@ -732,7 +724,6 @@ libkrad.so.0:krad_packet_new_response
 libkrb5.so.3:HIDDEN
 libkrb5.so.3:_krb5_conf_boolean
 libkrb5.so.3:decode_krb5_ad_kdcissued
-libkrb5.so.3:decode_krb5_ad_signedpath
 libkrb5.so.3:decode_krb5_ap_rep
 libkrb5.so.3:decode_krb5_ap_rep_enc_part
 libkrb5.so.3:decode_krb5_ap_req
@@ -785,8 +776,6 @@ libkrb5.so.3:decode_krb5_ticket
 libkrb5.so.3:decode_krb5_typed_data
 libkrb5.so.3:decode_utf8_strings
 libkrb5.so.3:encode_krb5_ad_kdcissued
-libkrb5.so.3:encode_krb5_ad_signedpath
-libkrb5.so.3:encode_krb5_ad_signedpath_data
 libkrb5.so.3:encode_krb5_ap_rep
 libkrb5.so.3:encode_krb5_ap_rep_enc_part
 libkrb5.so.3:encode_krb5_ap_req
@@ -901,12 +890,14 @@ libkrb5.so.3:k5_plugin_register_dyn
 libkrb5.so.3:k5_rc_close
 libkrb5.so.3:k5_rc_get_name
 libkrb5.so.3:k5_rc_resolve
+libkrb5.so.3:k5_rc_store
 libkrb5.so.3:k5_size_auth_context
 libkrb5.so.3:k5_size_authdata
 libkrb5.so.3:k5_size_authdata_context
 libkrb5.so.3:k5_size_context
 libkrb5.so.3:k5_size_keyblock
 libkrb5.so.3:k5_size_principal
+libkrb5.so.3:k5_sname_compare
 libkrb5.so.3:k5_unmarshal_cred
 libkrb5.so.3:k5_unmarshal_princ
 libkrb5.so.3:k5_unwrap_cammac_svc
@@ -1045,7 +1036,6 @@ libkrb5.so.3:krb5_encrypt_tkt_part
 libkrb5.so.3:krb5_expand_hostname
 libkrb5.so.3:krb5_find_authdata
 libkrb5.so.3:krb5_free_ad_kdcissued
-libkrb5.so.3:krb5_free_ad_signedpath
 libkrb5.so.3:krb5_free_address
 libkrb5.so.3:krb5_free_addresses
 libkrb5.so.3:krb5_free_ap_rep
@@ -1187,6 +1177,8 @@ libkrb5.so.3:krb5_is_permitted_enctype
 libkrb5.so.3:krb5_is_referral_realm
 libkrb5.so.3:krb5_is_thread_safe
 libkrb5.so.3:krb5_kdc_rep_decrypt_proc
+libkrb5.so.3:krb5_kdc_sign_ticket
+libkrb5.so.3:krb5_kdc_verify_ticket
 libkrb5.so.3:krb5_kt_add_entry
 libkrb5.so.3:krb5_kt_client_default
 libkrb5.so.3:krb5_kt_close
@@ -1210,6 +1202,7 @@ libkrb5.so.3:krb5_lock_file
 libkrb5.so.3:krb5_make_authdata_kdc_issued
 libkrb5.so.3:krb5_make_full_ipaddr
 libkrb5.so.3:krb5_make_fulladdr
+libkrb5.so.3:krb5_marshal_credentials
 libkrb5.so.3:krb5_merge_authdata
 libkrb5.so.3:krb5_mk_1cred
 libkrb5.so.3:krb5_mk_error
@@ -1310,6 +1303,7 @@ libkrb5.so.3:krb5_tkt_creds_get_times
 libkrb5.so.3:krb5_tkt_creds_init
 libkrb5.so.3:krb5_tkt_creds_step
 libkrb5.so.3:krb5_unlock_file
+libkrb5.so.3:krb5_unmarshal_credentials
 libkrb5.so.3:krb5_unpack_full_ipaddr
 libkrb5.so.3:krb5_unparse_name
 libkrb5.so.3:krb5_unparse_name_ext

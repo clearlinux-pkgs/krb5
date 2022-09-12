@@ -43,8 +43,6 @@ Configure miss: if vasprintf needs a prototype provided
 Configure miss: if vasprintf needs a prototype provided
 Configure miss: libedit
 Configure miss: libedit
-Configure miss: library containing yywrap
-Configure miss: library containing yywrap
 Configure miss: libverto
 Configure miss: libverto
 Configure miss: machine/byte_order.h
@@ -76,8 +74,6 @@ Configure miss: sys_errlist declaration
 Configure miss: sys_errlist declaration
 Configure miss: sys_errlist in libc
 Configure miss: sys_errlist in libc
-Configure miss: tclConfig.sh
-Configure miss: tclConfig.sh
 Configure miss: whether compile_et supports --textdomain
 Configure miss: whether compile_et supports --textdomain
 Configure miss: whether gmtime_r returns int
