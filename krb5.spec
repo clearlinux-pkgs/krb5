@@ -4,7 +4,7 @@
 #
 Name     : krb5
 Version  : 1.20
-Release  : 45
+Release  : 46
 URL      : https://github.com/krb5/krb5/archive/krb5-1.20-final/krb5-1.20.tar.gz
 Source0  : https://github.com/krb5/krb5/archive/krb5-1.20-final/krb5-1.20.tar.gz
 Summary  : An implementation of Kerberos network authentication
@@ -148,7 +148,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1662998919
+export SOURCE_DATE_EPOCH=1663251375
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
 export FCFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
@@ -173,7 +173,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1662998919
+export SOURCE_DATE_EPOCH=1663251375
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/krb5
 cp %{_builddir}/krb5-krb5-%{version}-final/src/lib/gssapi/LICENSE %{buildroot}/usr/share/package-licenses/krb5/feb23c7f425c7c619cb04c91997f471e2d3b8e9b || :
