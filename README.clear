@@ -1,0 +1,3 @@
+Make sure to update and patch sssd on version updates.
+sssd has a hardcoded whitelist of supported versions and
+connections to AD breaks if KRB5 is not in that whitelist
