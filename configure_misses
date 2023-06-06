@@ -1,84 +1,126 @@
 Configure miss: MAXHOSTNAMELEN in netdb.h
 Configure miss: MAXHOSTNAMELEN in netdb.h
+Configure miss: MAXHOSTNAMELEN in netdb.h
+Configure miss: SD_Init in -laceclnt
 Configure miss: SD_Init in -laceclnt
 Configure miss: SD_Init in -laceclnt
 Configure miss: __int128_t
 Configure miss: __uint128_t
 Configure miss: _cmocka_run_group_tests in -lcmocka
 Configure miss: _cmocka_run_group_tests in -lcmocka
+Configure miss: _cmocka_run_group_tests in -lcmocka
 Configure miss: add_key in -lkeyutils
+Configure miss: ber_init in -lldap
 Configure miss: ber_init in -lldap
 Configure miss: bswap16
 Configure miss: bswap16
+Configure miss: bswap16
+Configure miss: bswap64
 Configure miss: bswap64
 Configure miss: bswap64
 Configure miss: cmocka.h
 Configure miss: cmocka.h
+Configure miss: cmocka.h
+Configure miss: explicit_memset
 Configure miss: explicit_memset
 Configure miss: explicit_memset
 Configure miss: g++ option to enable C++11 features
 Configure miss: g++ option to enable C++11 features
+Configure miss: g++ option to enable C++11 features
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: if C compiler supports -Werror=unknown-warning-option
 Configure miss: if C compiler supports -Werror=unknown-warning-option
+Configure miss: if C compiler supports -Werror=unknown-warning-option
+Configure miss: if C compiler supports -Wnewline-eof
 Configure miss: if C compiler supports -Wnewline-eof
 Configure miss: if C compiler supports -Wnewline-eof
 Configure miss: if argument to wait is int *
 Configure miss: if argument to wait is int *
+Configure miss: if argument to wait is int *
+Configure miss: if daemon needs a prototype provided
 Configure miss: if daemon needs a prototype provided
 Configure miss: if daemon needs a prototype provided
 Configure miss: if gethostbyname_r returns a pointer
 Configure miss: if gethostbyname_r returns a pointer
+Configure miss: if gethostbyname_r returns a pointer
+Configure miss: if getservbyname_r returns a pointer
 Configure miss: if getservbyname_r returns a pointer
 Configure miss: if getservbyname_r returns a pointer
 Configure miss: if getsockname() takes arguments struct sockaddr * and int *
+Configure miss: if getsockname() takes arguments struct sockaddr * and int *
+Configure miss: if getsockname() takes arguments struct sockaddr * and size_t *
 Configure miss: if getsockname() takes arguments struct sockaddr * and size_t *
 Configure miss: if strptime needs a prototype provided
 Configure miss: if strptime needs a prototype provided
+Configure miss: if strptime needs a prototype provided
+Configure miss: if swab needs a prototype provided
 Configure miss: if swab needs a prototype provided
 Configure miss: if swab needs a prototype provided
 Configure miss: if va_list objects can be copied by assignment
+Configure miss: if va_list objects can be copied by assignment
+Configure miss: if vasprintf needs a prototype provided
 Configure miss: if vasprintf needs a prototype provided
 Configure miss: if vasprintf needs a prototype provided
 Configure miss: libedit
 Configure miss: libedit
+Configure miss: libedit
+Configure miss: libverto
 Configure miss: libverto
 Configure miss: libverto
 Configure miss: machine/byte_order.h
 Configure miss: machine/byte_order.h
+Configure miss: machine/byte_order.h
+Configure miss: machine/endian.h
 Configure miss: machine/endian.h
 Configure miss: machine/endian.h
 Configure miss: mdb_env_create in -llmdb
 Configure miss: perror declaration
 Configure miss: perror declaration
+Configure miss: perror declaration
+Configure miss: regexp.h
 Configure miss: regexp.h
 Configure miss: regexp.h
 Configure miss: regexpr.h
 Configure miss: regexpr.h
+Configure miss: regexpr.h
+Configure miss: res_ndestroy
 Configure miss: res_ndestroy
 Configure miss: res_ndestroy
 Configure miss: sigsetjmp
 Configure miss: sigsetjmp
+Configure miss: sigsetjmp
+Configure miss: struct if_laddrconf
 Configure miss: struct if_laddrconf
 Configure miss: struct if_laddrconf
 Configure miss: struct lifconf
 Configure miss: struct lifconf
+Configure miss: struct lifconf
+Configure miss: struct rt_msghdr
 Configure miss: struct rt_msghdr
 Configure miss: struct rt_msghdr
 Configure miss: struct stat.st_mtimespec.tv_nsec
 Configure miss: struct stat.st_mtimespec.tv_nsec
+Configure miss: struct stat.st_mtimespec.tv_nsec
+Configure miss: sys/bswap.h
 Configure miss: sys/bswap.h
 Configure miss: sys/bswap.h
 Configure miss: sys_errlist declaration
 Configure miss: sys_errlist declaration
+Configure miss: sys_errlist declaration
+Configure miss: sys_errlist in libc
 Configure miss: sys_errlist in libc
 Configure miss: sys_errlist in libc
 Configure miss: whether compile_et supports --textdomain
 Configure miss: whether compile_et supports --textdomain
+Configure miss: whether compile_et supports --textdomain
+Configure miss: whether gmtime_r returns int
 Configure miss: whether gmtime_r returns int
 Configure miss: whether gmtime_r returns int
 Configure miss: whether to use priocntl hack
 Configure miss: whether to use priocntl hack
+Configure miss: whether to use priocntl hack
+Configure miss: xom.h
 Configure miss: xom.h
 Configure miss: xom.h
