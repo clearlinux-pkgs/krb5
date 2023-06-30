@@ -5,7 +5,7 @@
 #
 Name     : krb5
 Version  : 1.21
-Release  : 50
+Release  : 51
 URL      : https://github.com/krb5/krb5/archive/krb5-1.21-final/krb5-1.21.tar.gz
 Source0  : https://github.com/krb5/krb5/archive/krb5-1.21-final/krb5-1.21.tar.gz
 Summary  : An implementation of Kerberos network authentication
