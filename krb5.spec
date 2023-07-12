@@ -4,10 +4,10 @@
 # Using build pattern: configure_ac
 #
 Name     : krb5
-Version  : 1.21
-Release  : 51
-URL      : https://github.com/krb5/krb5/archive/krb5-1.21-final/krb5-1.21.tar.gz
-Source0  : https://github.com/krb5/krb5/archive/krb5-1.21-final/krb5-1.21.tar.gz
+Version  : 1.21.1
+Release  : 52
+URL      : https://github.com/krb5/krb5/archive/krb5-1.21.1-final/krb5-1.21.1.tar.gz
+Source0  : https://github.com/krb5/krb5/archive/krb5-1.21.1-final/krb5-1.21.1.tar.gz
 Summary  : An implementation of Kerberos network authentication
 Group    : Development/Tools
 License  : MIT
@@ -140,14 +140,14 @@ man components for the krb5 package.
 
 
 %prep
-%setup -q -n krb5-krb5-1.21-final
-cd %{_builddir}/krb5-krb5-1.21-final
+%setup -q -n krb5-krb5-1.21.1-final
+cd %{_builddir}/krb5-krb5-1.21.1-final
 %patch -P 1 -p1
 pushd ..
-cp -a krb5-krb5-1.21-final build32
+cp -a krb5-krb5-1.21.1-final build32
 popd
 pushd ..
-cp -a krb5-krb5-1.21-final buildavx2
+cp -a krb5-krb5-1.21.1-final buildavx2
 popd
 
 %build
@@ -155,7 +155,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1686069582
+export SOURCE_DATE_EPOCH=1689187647
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -192,9 +192,10 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1686069582
+export SOURCE_DATE_EPOCH=1689187647
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/krb5
+cp %{_builddir}/krb5-krb5-%{version}-final/NOTICE %{buildroot}/usr/share/package-licenses/krb5/63254f2d180b67ee59eeaf23bbe986c939888482 || :
 cp %{_builddir}/krb5-krb5-%{version}-final/src/lib/gssapi/LICENSE %{buildroot}/usr/share/package-licenses/krb5/feb23c7f425c7c619cb04c91997f471e2d3b8e9b || :
 pushd ../build32/src
 %make_install32
@@ -480,6 +481,7 @@ chmod a+x %{buildroot}/usr/bin/ksu
 
 %files license
 %defattr(0644,root,root,0755)
+/usr/share/package-licenses/krb5/63254f2d180b67ee59eeaf23bbe986c939888482
 /usr/share/package-licenses/krb5/feb23c7f425c7c619cb04c91997f471e2d3b8e9b
 
 %files man
